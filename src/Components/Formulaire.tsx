@@ -34,7 +34,7 @@ function Formulaire ({dataForms, handleChange, handleSubmit}: MyformType){
             </div>
             <div>
             <button className='buttonContact' type="submit" onClick={handleSubmit}>
-            <Link to="/"> </Link> Cupidon livre ça 🎯
+            <Link to={"/"}> </Link> Cupidon livre ça 🎯
             </button>
             </div>
           </form>
