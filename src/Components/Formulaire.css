@@ -19,10 +19,11 @@ body{
 
 }
 
-.form{
+#formContainer{
     width: 50%;
     height: 50vh;
-    background-color: rgba(56, 67, 81, 0.724);
+    /* background-color: rgba(56, 67, 81, 0.724); */
+    background-image: url('https://images.pexels.com/photos/29829892/pexels-photo-29829892/free-photo-of-ciel-nocturne-epoustouflant-avec-queue-de-comete-visible.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     padding: 0 10px;
     margin: 0 auto;
     border: solid 3px ;
@@ -35,11 +36,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-}
-
-
-
-.lableInput{
+    .lableInput{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -53,6 +50,7 @@ body{
         &:hover{
             border-bottom: solid 2px #fff;
         }
+    }
     }
 }
 
@@ -84,7 +82,7 @@ body{
     width: 150px;
     padding: 0;
     background-color: black;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #fff;
     &:hover{
         border-bottom: solid 2px #fff;
