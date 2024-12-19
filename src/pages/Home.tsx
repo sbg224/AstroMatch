@@ -4,6 +4,7 @@ import pngegg from "../assets/pngegg.png";
 import William from "../assets/William.png";
 import Lucie from "../assets/Lucie.png";
 import Kashyyyk_Planet_Preview from "../assets/Kashyyyk_Planet_Preview.png";
+import AvisUsers from "../Components/AvisUsers";
 
 function Home() {
   const [planetes, setPlanetes] = useState([]);
@@ -26,32 +27,35 @@ function Home() {
   }, []);
 
   return (
-    <main>
-      <h1>Planètes</h1>
-      <div className="planete-container">
-        {planetes.map((planete, index) => (
-          <div key={planete.name} className="planete-card">
-            <div className="test">
-              <p className="planete-name">{planete.name}</p>
+    <>
+      <main>
+        <h1>Planètes</h1>
+        <div className="planete-container">
+          {planetes.map((planete, index) => (
+            <div key={planete.name} className="planete-card">
+              <div className="test">
+                <p className="planete-name">{planete.name}</p>
+              </div>
+              {/* Alternance des images en fonction de l'index */}
+              <img
+                className="planete-image"
+                src={
+                  index % 4 === 0
+                    ? pngegg
+                    : index % 4 === 1
+                    ? William
+                    : index % 4 === 2
+                    ? Lucie
+                    : Kashyyyk_Planet_Preview
+                }
+                alt={`Planète ${planete.name}`}
+              />
             </div>
-            {/* Alternance des images en fonction de l'index */}
-            <img
-              className="planete-image"
-              src={
-                index % 4 === 0
-                  ? pngegg
-                  : index % 4 === 1
-                  ? William
-                  : index % 4 === 2
-                  ? Lucie
-                  : Kashyyyk_Planet_Preview
-              }
-              alt={`Planète ${planete.name}`}
-            />
-          </div>
-        ))}
-      </div>
-    </main>
+          ))}
+        </div>
+      </main>
+      <AvisUsers />
+    </>
   );
 }
 
