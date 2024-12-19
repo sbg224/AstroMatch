@@ -1,0 +1,15 @@
+
+
+#AnswerDatas{
+    width: 50%;
+
+    /* background-color: rgba(56, 67, 81, 0.724); */
+    background-image: url('https://images.pexels.com/photos/29829892/pexels-photo-29829892/free-photo-of-ciel-nocturne-epoustouflant-avec-queue-de-comete-visible.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    padding: 0 10px;
+    margin: 0 auto;
+    border: solid 3px ;
+    color: var(--color-police);
+    font-family: var(--police-other);
+    border-radius: 10px;
+    box-shadow: 2px 2px ;
+} 
