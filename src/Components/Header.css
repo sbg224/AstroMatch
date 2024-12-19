@@ -1,57 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/sf-distant-galaxy');
-*{ 
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-distant-galaxy");
+* {
+  margin: 0;
 }
-:root{
-    --Typo1: 'SF Distant Galaxy', sans-serif;
-    --Typo2: 'Noto Serif Display', serif;
-    --Color1 : white;
-    --Color2 : black ;
+:root {
+  --Typo1: "SF Distant Galaxy", sans-serif;
+  --Typo2: "Noto Serif Display", serif;
+  --Color1: white;
+  --Color2: black;
 }
 
-.divHeader{
-    display: flex;
-    justify-content: center;
-    clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
-    height: 8vh;
-    width: 80%;
-    margin: 0 auto;
+.divHeader {
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0% 0, 100% 0, 90% 100%, 10% 100%);
+  height: 8vh;
+  width: 80%;
+  margin: 0 auto;
 
-    .navHeader{
+  .navHeader {
     background-color: var(--Color1);
     width: 100%;
-    
 
-        .ulHeader{
-        padding: 1.2rem 0.5rem;
+    .ulHeader {
+      background-color: var(--Color1);
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: space-around;
+      padding: 8px 0 0 0;
+
+      li {
         background-color: var(--Color1);
-        display: flex;
-        list-style: none;
-        align-items: center;
-        justify-content: space-around;
-        padding: 8px 0 0 0;
-        
-        
-        li{
-            background-color: var(--Color1);
-            font-size: 25px;
-            font-family: var(--Typo1);
-            letter-spacing: 5px;
-            
-            &:hover{
-            text-decoration:  5px underline var(--Color2) ;
-            }
-        
-            
-            
-            img{
-                background-color: var(--Color1);
-                width: 70px;
-                border: 1px solid var(--Color2);
-                border-radius: 50%;
-            }
+        font-size: 25px;
+        font-family: var(--Typo1);
+        letter-spacing: 5px;
+
+        &:hover {
+          text-decoration: 5px underline var(--Color2);
         }
+
+        img {
+          background-color: var(--Color1);
+          width: 70px;
+          border: 1px solid var(--Color2);
+          border-radius: 50%;
+        }
+      }
     }
-}
+  }
 }

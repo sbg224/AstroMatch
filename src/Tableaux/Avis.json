@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Luke Skywalker",
+    "age": 28,
+    "gender": "Male",
+    "bio": "Aventurier galactique à la recherche d'une connexion profonde. Amateur de voyages stellaires, de méditation et toujours prêt à partager une quête héroïque. Vous cherchez un Jedi en quête d'équilibre ? Je suis là.",
+    "planet": "Tatooine"
+  },
+  {
+    "name": "Leia Organa",
+    "age": 27,
+    "gender": "Female",
+    "bio": "Leader passionnée et déterminée, je crois au pouvoir des alliances solides. Entre mes aventures diplomatiques et héroïques, je recherche quelqu'un qui saura m'accompagner dans la défense de la galaxie (et de mon cœur).",
+    "planet": "Alderaan"
+  },
+  {
+    "name": "Han Solo",
+    "age": 32,
+    "gender": "Male",
+    "bio": "Pilote audacieux avec un penchant pour les défis et un cœur plus grand que le Millennium Falcon. Si vous êtes partant(e) pour des aventures imprévisibles (et peut-être un peu de contrebande), faisons équipe.",
+    "planet": "Corellia"
+  },
+  {
+    "name": "Rey",
+    "age": 22,
+    "gender": "Female",
+    "bio": "Exploratrice indépendante en quête d'une connexion authentique. J'adore découvrir de nouveaux horizons, et je cherche quelqu'un pour écrire la prochaine page de mon histoire galactique. La Force nous réunira peut-être !",
+    "planet": "Jakku"
+  },
+  {
+    "name": "Darth Vader",
+    "age": 45,
+    "gender": "Male",
+    "bio": "Seigneur Sith complexe avec un passé sombre mais un futur plein de potentiel. Si vous êtes prêt(e) à explorer les mystères de la galaxie et peut-être un peu de rédemption, contactez-moi.",
+    "planet": "Mustafar"
+  },
+  {
+    "name": "Yoda",
+    "age": 900,
+    "gender": "Male",
+    "bio": "Sage Jedi cherchant une âme curieuse à guider. Grand maître de la Force et de la patience, j'offre sagesse, méditation et une perspective galactique unique. \"Connexions profondes, recherche je fais.\"",
+    "planet": "Dagobah"
+  }
+]

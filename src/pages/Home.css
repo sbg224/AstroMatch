@@ -1,3 +1,80 @@
+@import url("https://fonts.cdnfonts.com/css/sf-distant-galaxy");
+* {
+  list-style: none;
+}
 
+body {
+  background-image: url(https://i.pinimg.com/originals/fd/b2/1c/fdb21c0e4f3dbb6ccd9a63c68fce8645.gif);
+}
 
+:root {
+  --font-family: "SF Distant Galaxy", sans-serif;
+}
 
+main {
+  p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: var(--font-family);
+  }
+
+  .planete-name {
+    font-family: var(--font-family);
+  }
+
+  .planete-card {
+    border: 2px solid #007bff;
+    animation: neonBorderAnim 0.5s alternate-reverse infinite;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    flex: 2 0 calc(30% - 10px);
+    box-sizing: border-box;
+
+    /* Ajout d'une marge de 2 unités en haut et en bas */
+    margin: 2rem 5rem;
+  }
+
+  .test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .planete-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .planete-image {
+    width: 200px;
+  }
+}
+
+@keyframes neonBorderAnim {
+  from {
+    box-shadow: 0 0 7px rgba(0, 123, 255, 0.7), 0 0 7px rgba(0, 123, 255, 0.7),
+      0 0 17px rgba(0, 123, 255, 0.7);
+  }
+  to {
+    box-shadow: 0 0 22px rgba(0, 123, 255, 0.7), 0 0 7px rgba(0, 123, 255, 0.7),
+      0 0 7px rgba(0, 123, 255, 0.7);
+  }
+}
