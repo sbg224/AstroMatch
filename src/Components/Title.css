@@ -1,0 +1,17 @@
+:root{
+    --police-title:'SF Distant Galaxy' ;
+    --police-other: 'Noto Serif' ;
+    --bgc: black;
+    --color-police: #fff;
+
+}
+
+.title{
+    color: #fff;
+    font-size: 30px;
+    font-family: var(--police-title);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
