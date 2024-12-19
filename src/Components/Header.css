@@ -40,6 +40,7 @@
             font-size: 25px;
             font-family: var(--Typo1);
             letter-spacing: 5px;
+
             
             &:hover{
             text-decoration:  5px underline var(--Color2) ;
