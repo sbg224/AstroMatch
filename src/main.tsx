@@ -3,42 +3,32 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
-import Home from "./pages/Home.tsx"
+import Home from "./pages/Home.tsx";
 import Meet from "./pages/Meet.tsx";
 import Contact from "./pages/Contact.tsx";
 
-
 const router = createBrowserRouter([
 	{
-		element: <App/>,
-		children:[
+		element: <App />,
+		children: [
 			{
-				path: '/',
-				element: < Home/>
+				path: "/",
+				element: <Home />,
 			},
 			{
-				path:'/Meet',
-				element: <Meet/>
+				path: "/Meet",
+				element: <Meet />,
 			},
 			{
-				path:'/Contact',
-				element: <Contact/>
-			}
-		]
-	}
-])
-
-
-
-
-
-
-
-
-
+				path: "/Contact",
+				element: <Contact />,
+			},
+		],
+	},
+]);
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<RouterProvider router = {router} />
+		<RouterProvider router={router} />
 	</StrictMode>,
 );

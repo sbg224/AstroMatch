@@ -1,13 +1,5 @@
-
-
-
-function Meet (){
-    return(
-        <div>
-            
-        </div>
-    )
+function Meet() {
+	return <div></div>;
 }
-
 
 export default Meet;
