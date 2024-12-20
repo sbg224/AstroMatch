@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-function Meet() {
-	return <div></div>;
-=======
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Meet.css";
@@ -153,7 +149,6 @@ function Meet() {
       <Sidebar />
     </>
   );
->>>>>>> dev
 }
 
 export default Meet;

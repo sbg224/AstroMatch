@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-function Contact() {
-	return <div></div>;
-=======
 import { useEffect, useState } from "react";
 import Formulaire from "../Components/Formulaire";
 import Title from "../Components/Title";
@@ -35,7 +31,6 @@ const handleSubmit = (e) =>{
 
         </div>
     )
->>>>>>> dev
 }
 
 export default Contact;

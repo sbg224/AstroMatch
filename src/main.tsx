@@ -21,14 +21,6 @@ const router = createBrowserRouter([
 				element: <Meet />,
 			},
 			{
-<<<<<<< HEAD
-				path: "/Contact",
-				element: <Contact />,
-			},
-		],
-	},
-]);
-=======
 				path:'/Meet/:id',
 				element:<Profile/>
 			},
@@ -48,7 +40,6 @@ const router = createBrowserRouter([
 
 
 
->>>>>>> dev
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-function Home() {
-	return <div></div>;
-=======
 import { useEffect, useState } from "react";
 import "./Home.css";
 import pngegg from "../assets/pngegg.png";
@@ -59,7 +55,6 @@ function Home() {
       <AvisUsers />
     </>
   );
->>>>>>> dev
 }
 
 export default Home;

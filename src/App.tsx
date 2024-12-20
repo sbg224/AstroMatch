@@ -6,21 +6,12 @@ import PageTypePlanet from "./pages/PageTypePlanet";
 import { NotificationProvider } from "./pages/NotificationProvider";
 
 function App() {
-<<<<<<< HEAD
-	return (
-		<>
-			<Header />
-			<Outlet />
-		</>
-	);
-=======
   return (
     <NotificationProvider>
       <Header />
       <Outlet />
     </NotificationProvider>
   );
->>>>>>> dev
 }
 
 export default App;
