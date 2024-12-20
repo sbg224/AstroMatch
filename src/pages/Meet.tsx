@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Meet.css";
 import reviews from "../Tableaux/Avis.json";
 import Sidebar from "./SideBar";
@@ -89,6 +90,10 @@ function Meet() {
   const opacity = Math.max(1 - Math.abs(currentX) / 300, 0);
   const indicatorOpacity = Math.min(Math.abs(currentX) / 20, 1);
 
+  const navigate = useNavigate()
+  const MyProfile = (id)=>{
+    navigate(`/Meet/${id}`)
+  }
   return (
     <>
       <h1 className="meet-swip">Swiping</h1>
@@ -118,7 +123,7 @@ function Meet() {
             </div>
           </div>
           <div className="profile-image">
-            <img src={currentProfile.image} alt={currentProfile.name} />
+            <img onClick={()=> MyProfile(currentProfile.id)} src={currentProfile.image} alt={currentProfile.name} />
           </div>
           <div className="profile-info">
             <h2 className="profile-name">{currentProfile.name}</h2>

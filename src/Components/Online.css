@@ -1,0 +1,12 @@
+#Online{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    .OnlineProfileP{
+        font-size: 10px;
+    }
+    .OnlineProfile{
+        width: 15px;
+    
+    }
+}

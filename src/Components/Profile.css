@@ -1,5 +1,5 @@
 /* Conteneur principal */
-.user-profile {
+#user-profile {
     max-width: 600px;
     margin: 20px auto;
     border: 1px solid #ddd;
@@ -8,108 +8,110 @@
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
+
+    /* En-tête du profil */
+    .profile-header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    
+    .profile-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+    
+    .profile-info {
+      color: #333;
+    }
+    
+    .profile-name {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .profile-location {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #777;
+    }
+    
+    /* Bio */
+    .profile-bio {
+      padding: 15px 20px;
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+    
+    /* Centres d'intérêt */
+    .profile-interests {
+      padding: 15px 20px;
+    }
+    
+    .profile-interests h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .profile-interests ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .profile-interests li {
+      background: #eef2f7;
+      color: #555;
+      font-size: 14px;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+    
+    /* Boutons d'action */
+    .profile-actions {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      background-color: #f9f9f9;
+    }
+    
+    .like-button,
+    .message-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .like-button {
+      background-color: #ff6b81;
+      color: white;
+    }
+    
+    .like-button:hover {
+      background-color: #ff3b5f;
+    }
+    
+    .message-button {
+      background-color: #007bff;
+      color: white;
+    }
+    
+    .message-button:hover {
+      background-color: #0056b3;
+    }
   }
-  
-  /* En-tête du profil */
-  .profile-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
-  .profile-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover;
-  }
-  
-  .profile-info {
-    color: #333;
-  }
-  
-  .profile-name {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .profile-location {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #777;
-  }
-  
-  /* Bio */
-  .profile-bio {
-    padding: 15px 20px;
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Centres d'intérêt */
-  .profile-interests {
-    padding: 15px 20px;
-  }
-  
-  .profile-interests h3 {
-    margin: 0 0 10px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .profile-interests ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .profile-interests li {
-    background: #eef2f7;
-    color: #555;
-    font-size: 14px;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 10px;
-  }
-  
-  /* Boutons d'action */
-  .profile-actions {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .like-button,
-  .message-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .like-button {
-    background-color: #ff6b81;
-    color: white;
-  }
-  
-  .like-button:hover {
-    background-color: #ff3b5f;
-  }
-  
-  .message-button {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .message-button:hover {
-    background-color: #0056b3;
-  }
+
+ 

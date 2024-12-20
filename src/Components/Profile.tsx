@@ -16,7 +16,7 @@ type MyUserType = {
 }
 
 function Profile() {
-    const Data: MyUserType[] = TabUsers.AvisTab;
+    const Data: MyUserType[] = TabUsers;
 
     const { id } = useParams();
     if (!id) {
@@ -39,7 +39,7 @@ function Profile() {
     };
 
     return (
-        <div className="user-profile">
+        <div id="user-profile">
             <div className="profile-header">
                 <img
                     src={Data[parseid].image}
