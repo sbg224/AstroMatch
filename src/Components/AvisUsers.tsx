@@ -35,18 +35,18 @@ function AvisUsers() {
           bientôt illuminer cette galaxie ! 🌌
         </p>
       </div>
-      <div className="meet">
+      <div className="avis-users">
         {personnages.map((personnage) => {
           const review = reviews.find((r) => r.name === personnage.name);
           return (
             <div key={personnage.name} className="personnages-card">
               <div className="personnage-image">
-                <img src={personnage.imageUrl} alt={personnage.name} />
+                <img src={review.image} alt={personnage.name} />
               </div>
               <div className="personnages-test">
                 <p className="personnages-name">{personnage.name}</p>
                 <p className="personnages-gender">{personnage.gender}</p>
-                <p className="personnages-year">Age: {personnage.birth_year}</p>
+                <p className="personnages-year">Age: {review.age}</p>
                 <p className="personnages-bio">
                   {review ? review.bio : "Aucun avis disponible."}
                 </p>
