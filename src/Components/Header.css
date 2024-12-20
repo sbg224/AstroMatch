@@ -35,7 +35,8 @@
         list-style: none;
         align-items: center;
         justify-content: space-around;
-        padding: 8px 0 0 0;
+        padding: 0px;
+        margin: 8px 0 0 0;
 
 li {
     background-color: var(--Color1);
@@ -45,14 +46,14 @@ li {
     letter-spacing: 5px;
     position: relative;
     transition: all 0.3s ease;
-
+}
 a {
     text-decoration: none;
-
+}
 :hover {
-    text-decoration: underline 3px solid var(--neon-color); 
+    text-decoration: underline 5px solid var(--neon-color); 
     transition: text-decoration-color 0.3s ease;
-
+}
 :hover::after {
     content: "";
     position: absolute;
@@ -63,11 +64,9 @@ a {
     background-color: var(--neon-color); 
     transform: scaleX(1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 3px var(--neon-color), 0 0 10px var(--neon-color), 0 0 10px var(--neon-color);
+    box-shadow: 0 0 5px var(--neon-color), 0 0 20px var(--neon-color), 0 0 30px var(--neon-color);
 }
-}
-}
-}
+
 img{
                 background-color: var(--Color1);
                 width: 70px;
