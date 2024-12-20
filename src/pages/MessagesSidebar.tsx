@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import "./MessagesSidebar.css";
 
 const MessagesSidebar = ({ messages }) => {
-  const [selectedUser, setSelectedUser] = useState(null); // Suivi de l'utilisateur sélectionné
+  const [selectedUser, setSelectedUser] = useState(null);
 
   const handleUserClick = (user) => {
-    setSelectedUser(user); // Définit l'utilisateur sélectionné
+    setSelectedUser(user);
   };
 
   return (
     <div className="sidebar-container">
-      {/* Section principale de la messagerie */}
       <div className="sidebar-section messages">
         {!selectedUser ? (
           <>
@@ -33,7 +32,7 @@ const MessagesSidebar = ({ messages }) => {
               <h2>{selectedUser.name}</h2>
               <button
                 className="close-btn"
-                onClick={() => setSelectedUser(null)} // Revenir à la liste principale
+                onClick={() => setSelectedUser(null)}
               >
                 ✖
               </button>

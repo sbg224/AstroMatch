@@ -20,6 +20,9 @@ main {
 
   h1 {
     font-family: var(--font-family);
+    color: white;
+    text-align: center;
+    font-size: 20px;
   }
 
   .planete-name {
@@ -40,7 +43,6 @@ main {
     flex: 2 0 calc(30% - 10px);
     box-sizing: border-box;
 
-    /* Ajout d'une marge de 2 unités en haut et en bas */
     margin: 2rem 5rem;
   }
 

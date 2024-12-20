@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 20px;
   margin: 20px;
-  background-color: #007bff15; /* Rouge pour alerte */
+  background-color: #007bff15;
   backdrop-filter: blur(10px);
   border: #007bff solid 2px;
   color: white;
@@ -19,7 +19,6 @@
   padding: 30px 20px;
 }
 
-/* Animation pour apparaitre et disparaitre */
 @keyframes fadeInOut {
   0% {
     opacity: 0;

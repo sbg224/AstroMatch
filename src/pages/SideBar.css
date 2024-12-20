@@ -14,6 +14,7 @@
   padding: 20px;
   box-sizing: border-box;
   border: solid 2px #007bff;
+  z-index: 9999;
 
   .close-button {
     position: absolute;
@@ -98,7 +99,7 @@
     }
     .user-status {
       margin: 0;
-      margin-left: auto; /* Pousse le "O" complètement à droite */
+      margin-left: auto;
       color: #39ff14;
       font-weight: bold;
       text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14,
@@ -123,7 +124,7 @@
 .conversation {
   position: fixed;
   top: 0;
-  left: 0; /* Ouvre la boîte de messages à gauche */
+  left: 0;
   width: 10cm;
   height: 100vh;
   background: #2c2c2c15;
@@ -136,6 +137,7 @@
   border: solid 2px #007bff;
   box-sizing: border-box;
   overflow-y: auto;
+  z-index: 9999;
 
   .conversation-header {
     display: flex;
@@ -151,11 +153,11 @@
     }
 
     img {
-      width: 50px; /* Taille de l'image dans le header */
+      width: 50px; 
       height: 50px;
       border-radius: 50%;
       object-fit: cover;
-      margin-right: 10px; /* Espace entre la photo et le texte */
+      margin-right: 10px; 
     }
 
     .close-btn {
@@ -176,7 +178,7 @@
   .conversation-messages {
     flex: 1;
     overflow-y: auto;
-    padding-right: 10px; /* Ajout d'un padding pour éviter que le texte touche les bords */
+    padding-right: 10px;
 
     .message-item {
       display: flex;

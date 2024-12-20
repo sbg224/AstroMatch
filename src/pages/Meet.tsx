@@ -15,17 +15,17 @@ function Meet() {
   };
 
   const handleSwipeLeft = () => {
-    if (swipingOut) return; // Empêche de swiper pendant une transition
-    setDirection(-1); // Indique un swipe à gauche
-    setCurrentX(-200); // Déclenche un mouvement léger
-    setSwipingOut(true); // Active la transition
+    if (swipingOut) return; 
+    setDirection(-1);
+    setCurrentX(-200); 
+    setSwipingOut(true); 
   };
 
   const handleSwipeRight = () => {
-    if (swipingOut) return; // Empêche de swiper pendant une transition
-    setDirection(1); // Indique un swipe à droite
-    setCurrentX(200); // Déclenche un mouvement léger
-    setSwipingOut(true); // Active la transition
+    if (swipingOut) return;
+    setDirection(1);
+    setCurrentX(200);
+    setSwipingOut(true);
   };
 
   const [isDragging, setIsDragging] = useState(false);
