@@ -1,0 +1,9 @@
+.open-sidebar-button {
+  position: relative;
+  background: #2c2c2c15;
+  backdrop-filter: blur(10px);
+  border: solid 2px #007bff;
+  color: white;
+  border-radius: 50px;
+  left: 90%;
+}

@@ -22,13 +22,22 @@ function Sidebar() {
 
   const [messages, setMessages] = useState(initialMessages);
 
-  // Tableau de réponses préconfigurées
   const predefinedResponses = [
-    "Intéressant, raconte-moi en plus.",
-    "Je vois, c'est fascinant.",
-    "Truc de ouff !",
-    "Je n'aurais jamais imaginé cela.",
-    "Ça mérite réflexion.",
+    "Salut, tu veux explorer la galaxie avec moi ?",
+    "Lumière ou obscurité ? Je peux t’offrir les deux.",
+    "Ma Force est puissante, mais toi… encore plus.",
+    "Tu veux tester la vitesse de la lumière ?",
+    "Prête à faire exploser ton univers avec moi ?",
+    "Vas-y viens, file-moi ton fax de vaisseau pour qu'on se capte en visio.",
+    "Allez, envoie-moi ton fax de vaisseau, on se capte en visio, ça va chauffer !",
+    "File-moi ton fax de vaisseau, on se voit en visio et on fait exploser l'hyperespace !",
+    "Envoyez-moi ton fax de vaisseau, prêt à faire un saut en hyperespace ensemble ?",
+    "Vas-y, balance ton fax de vaisseau pour qu’on décolle en visio, je t'attends !",
+    "Passe-moi ton fax de vaisseau, et je viens te rejoindre pour une mission galactique !",
+    "File-moi ton fax de vaisseau, et prépare-toi à voyager en hyperespace avec moi.",
+    "Vas-y, donne-moi ton fax de vaisseau, je t’emmène en visio, et on décolle !",
+    "Envoie ton fax de vaisseau, on se capte en visio pour une aventure galactique ensemble.",
+    "File-moi ton fax de vaisseau, et on part à la vitesse de la lumière pour notre visio.",
   ];
 
   const handleUserClick = (userId) => {
@@ -51,7 +60,6 @@ function Sidebar() {
 
     setInputMessage("");
 
-    // Sélection d'une réponse au hasard
     const randomResponse =
       predefinedResponses[
         Math.floor(Math.random() * predefinedResponses.length)

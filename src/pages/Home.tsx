@@ -27,14 +27,13 @@ function Home() {
   return (
     <>
       <main>
-        <h1>Planètes</h1>
+        <h1>En exclusivité sur ces planètes, indisponible ailleurs!</h1>
         <div className="planete-container">
           {planetes.map((planete, index) => (
             <div key={planete.name} className="planete-card">
               <div className="test">
                 <p className="planete-name">{planete.name}</p>
               </div>
-              {/* Alternance des images en fonction de l'index */}
               <img
                 className="planete-image"
                 src={
