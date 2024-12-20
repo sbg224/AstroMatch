@@ -1,0 +1,17 @@
+
+
+#AnswerDatas{
+    width: 50%;
+
+    /* background-color: rgba(56, 67, 81, 0.724); */
+    background: #2c2c2c15;  
+    backdrop-filter: blur(10px);  
+    padding: 0 10px;
+    margin: 0 auto;
+    border: solid 2px #007bff;
+    color: var(--color-police);
+    font-family: var(--police-other);
+    border-radius: 10px;
+    box-shadow: 2px 2px ;
+} 
+

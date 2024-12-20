@@ -1,0 +1,40 @@
+.notification {
+  position: fixed;
+  bottom: 20px;
+  margin: 20px;
+  background-color: #007bff15; /* Rouge pour alerte */
+  backdrop-filter: blur(10px);
+  border: #007bff solid 2px;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.notification:hover {
+  transition: 1s ease-in-out;
+  padding: 30px 20px;
+}
+
+/* Animation pour apparaitre et disparaitre */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

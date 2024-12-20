@@ -1,0 +1,62 @@
+ [
+    {
+      "id": 0,
+      "name": "Luke Skywalker",
+      "age": 67,
+      "gender": "Male",
+      "bio": "Aventurier galactique à la recherche d'une connexion profonde. Amateur de voyages stellaires, de méditation et toujours prêt à partager une quête héroïque. Vous cherchez un Jedi en quête d'équilibre ? Je suis là.",
+      "planet": "Tatooine",
+      "image": "https://static.wikia.nocookie.net/esstarwars/images/1/15/Luke_Skywalker_Ep_7_SWCT.png",
+      "interests": ["Voyages stellaires", "Méditation", "Quêtes héroïques"]
+    },
+    {
+      "id": 1,
+      "name": "R2-D2",
+      "age": 27,
+      "gender": "Non-binary",
+      "bio": "Petit droïde astromécano courageux et loyal. Toujours prêt à aider, je recherche des partenaires d'aventure pour sauver la galaxie (ou réparer un vaisseau).",
+      "planet": "Naboo",
+      "image": "https://static.wikia.nocookie.net/frstarwars/images/0/0c/R2-D2.png",
+      "interests": ["Aider les autres", "Réparer des vaisseaux", "Sauver la galaxie"]
+    },
+    {
+      "id": 2,
+      "name": "C-3PO",
+      "age": 32,
+      "gender": "Male",
+      "bio": "Droïde de protocole élégant et polyglotte. Si vous avez besoin d'un interprète ou d'un compagnon raffiné, je suis votre droïde. Apprécie les conversations civilisées et les bonnes manières.",
+      "planet": "Tatooine",
+      "image": "https://static.wikia.nocookie.net/starwars/images/a/a2/C-3PO-TROSTGG.png",
+      "interests": ["Interprétation", "Conversations civilisées", "Bonnes manières"]
+    },
+    {
+      "id": 3,
+      "name": "Rey",
+      "age": 22,
+      "gender": "Female",
+      "bio": "Exploratrice indépendante en quête d'une connexion authentique. J'adore découvrir de nouveaux horizons, et je cherche quelqu'un pour écrire la prochaine page de mon histoire galactique. La Force nous réunira peut-être !",
+      "planet": "Jakku",
+      "image": "https://static.wikia.nocookie.net/frstarwars/images/2/2b/Rey_TROS_Fathead.png",
+      "interests": ["Découverte", "Explorer de nouveaux horizons", "Connexion authentique"]
+    },
+    {
+      "id": 4,
+      "name": "Darth Vader",
+      "age": 45,
+      "gender": "Male",
+      "bio": "Seigneur Sith complexe avec un passé sombre mais un futur plein de potentiel. Si vous êtes prêt(e) à explorer les mystères de la galaxie et peut-être un peu de rédemption, contactez-moi.",
+      "planet": "Mustafar",
+      "image": "https://static.wikia.nocookie.net/frstarwars/images/3/32/Dark_Vador.jpg",
+      "interests": ["Explorer les mystères de la galaxie", "Rédemption", "Potentiel futur"]
+    },
+    {
+      "id": 5,
+      "name": "Yoda",
+      "age": 900,
+      "gender": "Male",
+      "bio": "Sage Jedi cherchant une âme curieuse à guider. Grand maître de la Force et de la patience, j'offre sagesse, méditation et une perspective galactique unique. \"Connexions profondes, recherche je fais.\"",
+      "planet": "Dagobah",
+      "image": "https://static.wikia.nocookie.net/frstarwars/images/5/5f/Yoda.png",
+      "interests": ["Sagesse", "Méditation", "Perspective galactique"]
+    }
+  ]

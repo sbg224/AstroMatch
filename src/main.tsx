@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import Home from "./pages/Home.tsx";
 import Meet from "./pages/Meet.tsx";
 import Contact from "./pages/Contact.tsx";
+import Profile from "./Components/Profile.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -20,12 +21,34 @@ const router = createBrowserRouter([
 				element: <Meet />,
 			},
 			{
+<<<<<<< HEAD
 				path: "/Contact",
 				element: <Contact />,
 			},
 		],
 	},
 ]);
+=======
+				path:'/Meet/:id',
+				element:<Profile/>
+			},
+			{
+				path:'/Contact',
+				element: <Contact/>
+			}
+		]
+	}
+])
+
+
+
+
+
+
+
+
+
+>>>>>>> dev
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>

@@ -1,0 +1,150 @@
+@import url("https://fonts.cdnfonts.com/css/sf-distant-galaxy");
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.meet-swip {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "SF Distant Galaxy", sans-serif;
+  font-size: 100px;
+}
+.meet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  user-select: none;
+
+  .profile-card {
+    background: #2c2c2c28;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    cursor: grab;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    user-select: none;
+    border: solid 2px #007bff;
+    bottom: 100px;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    .indicators {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+
+      .indicator {
+        position: absolute;
+        font-size: 100px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.1s ease;
+      }
+
+      .indicator-left {
+        transform: translate(-50%, -50%);
+      }
+
+      .indicator-right {
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .profile-image {
+      img {
+        width: fit-content;
+        height: auto;
+        margin: 15px auto;
+        display: block;
+        border-radius: 50%;
+        border: solid 1px #007bff;
+        aspect-ratio: 1;
+      }
+    }
+
+    .profile-info {
+      padding: 20px;
+
+      .profile-name {
+        margin: 0;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+
+      .profile-planet {
+        margin: 5px 0;
+        font-size: 15px;
+        padding-bottom: 20px;
+      }
+      .profile-bio {
+        text-align: start;
+        font-weight: 600;
+      }
+      .rofile-bio-text {
+        text-align: start;
+      }
+    }
+  }
+}
+
+.button-test {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+
+  button {
+    background-color: #007bff15;
+    border: #0d2136 solid 2px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: #0056b3;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      background-color: #003f7f;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+      transform: scale(0.95);
+    }
+
+    &:empty {
+      background-color: #f0f0f0;
+      border: 2px dashed #007bff;
+      color: transparent;
+    }
+
+    &:first-child,
+    &:last-child {
+      font-size: 2rem;
+      padding: 10px 15px;
+    }
+  }
+}
