@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import "./Profile.css";
 import TabUsers from '../Tableaux/Avis.json'
+import Online from "./Online";
+import icone from'../assets/correct.png'
 
 type MyUserType = {
     id: number;
@@ -32,6 +34,7 @@ function Profile() {
     };
 
     const handleMessage = () => {
+
         alert(`Ouvrir une boîte de dialogue pour envoyer un message à ${Data[parseid].name}.`);
     };
 
@@ -46,6 +49,7 @@ function Profile() {
                 <div className="profile-info">
                     <h2 className="profile-name">
                         {Data[parseid].name}, {Data[parseid].age}, {Data[parseid].gender}
+                        <Online imageSrc= {icone} name= "icone connexion" />
                     </h2>
                     <p className="profile-location">{Data[parseid].planet}</p>
                 </div>
