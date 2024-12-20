@@ -31,12 +31,12 @@ body {
   }
 }
 
-.meet {
+.avis-users {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  padding: 20px;
+  padding: 50px 30px;
 
   p {
     color: white;
@@ -99,7 +99,7 @@ body {
     font-size: 1rem;
     color: #fff;
     font-style: italic;
-    background: rgba(0, 123, 255, 0.2);
+    background: rgba(0, 123, 255, 0.062);
     border-top: 2px solid rgba(255, 255, 255, 0.2);
     padding: 15px;
     margin-top: 10px;

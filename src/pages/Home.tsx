@@ -10,9 +10,7 @@ function Home() {
   const [planetes, setPlanetes] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://starwarsapi.remote-8.wilders.dev/api/characters/original?take=4&skip=0"
-    )
+    fetch("https://starwarsapi.remote-8.wilders.dev/api/homeworld?take=4")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
