@@ -1,6 +1,6 @@
 
 
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Formulaire.css'
 
 type MyformType={
@@ -15,6 +15,13 @@ type MyformType={
 }
 
 function Formulaire ({dataForms, handleChange, handleSubmit}: MyformType){
+  const navigate = useNavigate(); // Initialiser useNavigate
+
+  const onSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+    e.preventDefault(); // Empêche le rechargement de la page
+    handleSubmit(e); // Appelle la fonction de gestion de soumission existante
+    navigate('/'); // Redirige vers la page d'accueil
+  };
 
 
     return(
@@ -33,8 +40,8 @@ function Formulaire ({dataForms, handleChange, handleSubmit}: MyformType){
               <textarea id='message' name="message" rows={4} cols={50} value ={dataForms.message} onChange={handleChange}  placeholder="Fais-moi vibrer avec ton message..."> </textarea>
             </div>
             <div>
-            <button className='buttonContact' type="submit" onClick={handleSubmit}>
-            <Link to="/"> </Link> Cupidon livre ça 🎯
+            <button className='buttonContact' type="submit" onClick={onSubmit}>
+              Cupidon livre ça 🎯
             </button>
             </div>
           </form>
